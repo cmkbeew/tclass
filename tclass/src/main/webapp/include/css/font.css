@@ -1,0 +1,58 @@
+@charset "utf-8";
+@font-face {
+	font-family:"Noto Light";
+	src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Light.woff') format('woff'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Light.ttf') format('truetype');
+    src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Light.eot');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"Noto Demi";
+	src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-DemiLight.eot');
+	src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-DemiLight.eot?#iefix') format('embedded-opentype'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-DemiLight.woff') format('woff'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-DemiLight.ttf') format('truetype'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-DemiLight.svg#NotoSansCJKkr-DemiLight') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"Noto Regular";
+	src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Regular.eot');
+	src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Regular.eot?#iefix') format('embedded-opentype'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Regular.woff') format('woff'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Regular.ttf') format('truetype'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Regular.svg#NotoSansCJKkr-Regular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"Noto Medium";
+	src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Medium.eot');
+	src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Medium.eot?#iefix') format('embedded-opentype'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Medium.woff') format('woff'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Medium.ttf') format('truetype'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Medium.svg#NotoSansCJKkr-Medium') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:"Noto Bold";
+	src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Bold.eot');
+	src:url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Bold.eot?#iefix') format('embedded-opentype'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Bold.woff') format('woff'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Bold.ttf') format('truetype'), url('http://cdndata.milkt.co.kr/ele/tspoon/font/NotoSansCJKkr-Bold.svg#NotoSansCJKkr-Bold') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face { 
+	font-family: 'Noto Black'; 
+	src: url('http://cdndata.milkt.co.kr/high/happ/css/fonts/NotoSansKR-Black.woff') format('woff'); 
+	font-weight:normal; 
+	font-style:normal; 
+} 
+
+@font-face {
+	font-family: 'BM JUA';
+	font-style: normal;
+	font-weight: normal;
+	src:url(http://cdndata.milkt.co.kr/ele/app/Include/fonts/BMJUA.woff2) format('woff2'),
+		url(http://cdndata.milkt.co.kr/ele/app/Include/fonts/BMJUA.woff) format('woff');
+}
+
+@font-face {
+	font-family:'NanumSquareRound';
+	font-style: normal;
+	src:url(http://cdndata.milkt.co.kr/ele/app/include/fonts/NanumSquareRoundR.woff) format('woff');
+}

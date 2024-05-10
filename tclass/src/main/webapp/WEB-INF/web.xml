@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>tclass</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>Driver</param-name>
+    <param-value>org.mariadb.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>URL</param-name>
+    <param-value>jdbc:mariadb://localhost:3306/tclass</param-value>
+  </context-param>
+  <context-param>
+    <param-name>dbId</param-name>
+    <param-value>tclass</param-value>
+  </context-param>
+  <context-param>
+    <param-name>dbPwd</param-name>
+    <param-value>tclass1</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>OneBoardController</servlet-name>
+    <servlet-class>controller.board.OneBoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OneBoardController</servlet-name>
+    <url-pattern>/board/oneboard.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>WriteBoardController</servlet-name>
+    <servlet-class>controller.board.WriteBoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WriteBoardController</servlet-name>
+    <url-pattern>/board/writeBoard.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ListBoardController</servlet-name>
+    <servlet-class>controller.board.ListBoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListBoardController</servlet-name>
+    <url-pattern>/board/myboard.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MyboardDetailController</servlet-name>
+    <servlet-class>controller.board.MyboardDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyboardDetailController</servlet-name>
+    <url-pattern>/board/myboardDetail.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ModifyBoardController</servlet-name>
+    <servlet-class>controller.board.ModifyBoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyBoardController</servlet-name>
+    <url-pattern>/board/modifyBoard.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteBoardController</servlet-name>
+    <servlet-class>controller.board.DeleteBoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteBoardController</servlet-name>
+    <url-pattern>/board/deleteBoard.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>IndexController</servlet-name>
+    <servlet-class>controller.IndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexController</servlet-name>
+    <url-pattern>/index.do</url-pattern>
+  </servlet-mapping>
+</web-app>

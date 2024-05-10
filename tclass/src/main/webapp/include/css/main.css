@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+
+/****************************************
+    로그인 상관없이 > 가이드팝업
+/****************************************/
+.start_popup{ position:fixed; top:0; left:0; z-index:99;width:100%; height:100%; background:rgba(0,0,0,0.85);}
+.start_popup .swiper-container-startPop{ position:absolute; top:50%;width:100%; transform:translateY(-50%);}
+.start_popup .btn_start{display:none;}
+.start_popup .swiper-pagination-bullet{ display:inline-block;width:8px; height:8px; border-radius:100%; background:#fff; opacity:1;}
+.start_popup .swiper-pagination-bullet-active{ background:#037bfb;opacity:1;}
+.start_popup .swiper-container-horizontal > .swiper-pagination-bullets{bottom:13.7%; left:0; width:100%;}
+.start_popup .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{margin:0 6px;}
+.start_popup .btn_start{ position:absolute; bottom:0; left:50%; z-index:9;width:68%; transform:translateX(-50%);}
+.start_popup .btn_skip{position:absolute; right:10%; bottom:0; z-index:9; text-decoration:underline;}
+.start_popup .swiper-container-startPop img{width:100%;}
+
+/****************************************
+     로그인X > 홍보페이지
+/****************************************/
+.swiper-slide .logout_page{line-height:0;}
+.swiper-slide .logout_page>p{/*display:flex;*/ position:relative;}
+.swiper-slide .logout_page>p .deco02{ position:absolute; top:85.618%; left:20%;width:5.416%; height:5.744%; animation:deco02 0.4s infinite alternate ease-in-out; -webkit-animation:deco02 0.4s infinite alternate ease-in-out;}
+.swiper-slide .logout_page>p .deco03{ position:absolute; top:81.497%; right:17.291%;width:5.416%; height:7.272%; animation:deco03 0.4s infinite alternate ease-in-out; -webkit-animation:deco03 0.4s infinite alternate ease-in-out;}
+.swiper-slide .logout_page>p .btn_start{ position:absolute; top:69.3%; left:31.458%;width:37.222%; height:14.937%;}
+/* 23-02-01 arrow animation 추가 */
+.swiper-slide .logout_page>p span a {display: none;}
+.swiper-slide .logout_page>p span.swiper-button-prev{position: absolute;top:47%;left: 10px;width: 43px;height: 44px;background:url(/tclass/cdndata.milkt.co.kr/ele/tspoon/Images/common/main/logout_page/arrow_left.png) no-repeat center center;background-size: 43px 44px;animation: bounceLeft 1.2s infinite alternate ease-in-out;-webkit-animation: bounceLeft 1.2s infinite alternate ease-in-out;}
+.swiper-slide .logout_page>p span.swiper-button-next{position: absolute;top:47%;right: 10px;width: 43px;height: 44px;background:url(/tclass/cdndata.milkt.co.kr/ele/tspoon/Images/common/main/logout_page/arrow_right.png) no-repeat center center;background-size: 43px 44px;animation: bounceRight 1.2s infinite alternate ease-in-out;-webkit-animation: bounceRight 1.2s infinite alternate ease-in-out;}
+.swiper-slide .logout_page .firstSpoonLink{ overflow:hidden; position:absolute; top:26.415%; left:0;width:100%; height:70.774%;}
+.swiper-slide .logout_page .firstSpoonLink a{ float:left; display:inline-block;width:50%; height:50%;}
+.swiper-slide .logout_page .secondSpoonLink{ overflow:hidden; position:absolute; top:42.031%; left:0;width:100%; height:52.891%;}
+.swiper-slide .logout_page .secondSpoonLink a{ float:left; display:inline-block;width:50%; height:33.333%;}
+@-webkit-keyframes deco02{0%{left:20%;} 100%{left:22%;}}
+@keyframes deco02{0%{left:20%;} 100%{left:22%;}}
+@-webkit-keyframes deco03{0%{right:17.291%;} 100%{right:19.291%;}}
+@keyframes deco03{0%{right:17.291%;} 100%{right:19.291%;}}
+
+/* 23-02-01 arrow animation 추가 */ 
+@-webkit-keyframes bounceLeft{0%{-webkit-transform:translate(0, 0px);} 50%{-webkit-transform:translate(-10px, 0);} 100%{-webkit-transform:translate(0, 0px);}}
+@keyframes bounceLeft{0%{transform:translate(0, 0px);} 50%{transform:translate(-10px, 0);} 100%{transform:translate(0, 0px);}}
+@-webkit-keyframes bounceRight{0%{-webkit-transform:translate(0, 0px);} 50%{-webkit-transform:translate(10px, 0);} 100%{-webkit-transform:translate(0, 0px);}}
+@keyframes bounceRight{0%{transform:translate(0, 0px);} 50%{transform:translate(10px, 0);} 100%{transform:translate(0, 0px);}}
+
+/****************************************
+    로그인O > 자녀 없을때 > 홍보페이지
+/****************************************/
+.swiper-slide .login_page>p{/*display:flex;*/ position:relative;}
+.swiper-slide .login_page>p>a{ position:absolute; top:66.993%; left:6.944%;width:86.111%; height:16.949%;}
+/* 23-02-01 arrow animation 추가 */
+.swiper-slide .login_page>p span a {display: none;}
+.swiper-slide .login_page>p span.swiper-button-prev{position: absolute;top:47%;left: 10px;width: 43px;height: 44px;background:url(/tclass/cdndata.milkt.co.kr/ele/tspoon/Images/common/main/logout_page/arrow_left.png) no-repeat center center;background-size: 43px 44px;animation: bounceLeft 1.2s infinite alternate ease-in-out;-webkit-animation: bounceLeft 1.2s infinite alternate ease-in-out;}
+.swiper-slide .login_page>p span.swiper-button-next{position: absolute;top:47%;right: 10px;width: 43px;height: 44px;background:url(/tclass/cdndata.milkt.co.kr/ele/tspoon/Images/common/main/logout_page/arrow_right.png) no-repeat center center;background-size: 43px 44px;animation: bounceRight 1.2s infinite alternate ease-in-out;-webkit-animation: bounceRight 1.2s infinite alternate ease-in-out;}
